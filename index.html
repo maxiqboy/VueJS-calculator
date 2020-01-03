@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator using Vue.js</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app" class="cal">
+        <div class="screen">
+            <div class="expression">{{expression}}</div>
+            
+            <div class="result" id="display">{{result}}</div>
+        </div>
+
+       
+        <div class="btnzone">
+            
+            
+            <div class="btn round func" id="clear" @click="clear()">AC</div>
+            <div class="btn round func" id="-" @click="pressNegative()">+-</div>
+            <div class="btn round func" id="%" @click="press()">%</div>
+            <div class="btn round func" id="divide" @click="pressOperator('/')">/</div>
+            <div class="btn round num" id="seven" @click="pressNumber('7')">7</div>
+            <div class="btn round num" id="eight" @click="pressNumber('8')">8</div>
+            <div class="btn round num" id="nine" @click="pressNumber('9')">9</div>
+            <div class="btn round func" id="multiply" @click="pressOperator('*')">x</div>
+            <div class="btn round num" id="four" @click="pressNumber('4')">4</div>
+            <div class="btn round num" id="five" @click="pressNumber('5')">5</div>
+            <div class="btn round num" id="six" @click="pressNumber('6')">6</div>
+            <div class="btn round func" id="subtract" @click="pressOperator('-')">-</div>
+            <div class="btn round num" id="one" @click="pressNumber('1')">1</div>
+            <div class="btn round num" id="two" @click="pressNumber('2')">2</div>
+            <div class="btn round num" id="three" @click="pressNumber('3')">3</div>
+            <div class="btn round func" id="add" @click="pressOperator('+')">+</div>
+            <div class="btn num zero" id="zero" @click="pressNumber('0')">0</div>
+            <div class="btn round func" id="decimal" @click="pressDot('.')">.</div>
+            <div class="btn round func" id="equals" @click="equal()">=</div>
+    
+        </div>
+
+
+
+    </div>
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="main.js"></script>
+</body>
+</html>
